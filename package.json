@@ -21,14 +21,15 @@
       "<rootDir>/node_modules/fbjs"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/Testing/AssetsTransformer.js",
-      "\\.(css|less)$": "<rootDir>/Testing/AssetsTransformer.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/testing/AssetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/testing/AssetsTransformer.js"
     }
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
     "@babel/preset-env": "^7.0.0-beta.51",
     "@babel/preset-react": "^7.0.0-beta.51",
+    "async": "^2.6.1",
     "axios": "^0.18.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
@@ -58,9 +59,9 @@
     "webpack-cli": "^3.1.0"
   },
   "scripts": {
-    "start-client": "webpack -d --watch",
+    "client": "webpack -d --watch",
     "server": "node server/server.js",
-    "start-database": "cd db && mongod",
+    "database": "cd db && mongod",
     "test": "jest --verbose"
   },
   "author": "",

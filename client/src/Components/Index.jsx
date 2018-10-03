@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
 import ReactDOM from 'react-dom';
-import Description from './Description.jsx';
+import GameManager from './Managers/GameManager.jsx';
 
-ReactDOM.render(<Description />, document.getElementById('root'));
+ReactDOM.render(<GameManager />, document.getElementById('root'));
